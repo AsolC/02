@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Увійдіть до акаунта KitchenNotes або створіть новий, щоб зберігати улюблені рецепти." />
+  <title>Вхід – KitchenNotes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Kitchen<span>Notes</span></a>
+      <div class="header-actions">
+        <nav>
+          <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="recipe-item.html">Рецепт</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+        <a href="login.html" class="btn-login">Увійти</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="auth-card">
+
+        <section id="login" class="auth-panel">
+          <h1>Вхід</h1>
+          <p>Увійдіть, щоб вподобувати рецепти та зберігати власні.</p>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="login-email">Електронна пошта</label>
+              <input type="email" id="login-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Пароль</label>
+              <input type="password" id="login-password" name="password" placeholder="Введіть пароль" required minlength="8" autocomplete="current-password" />
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Запам'ятати мене</label>
+            </div>
+            <button type="submit">Увійти</button>
+          </form>
+          <p class="auth-switch">Ще немає акаунта? <a href="#register">Зареєструватися</a></p>
+        </section>
+
+        <section id="register" class="auth-panel">
+          <h1>Реєстрація</h1>
+          <p>Створіть акаунт безкоштовно – PRO можна підключити пізніше.</p>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="reg-name">Ваше ім'я</label>
+              <input type="text" id="reg-name" name="name" placeholder="Введіть ваше ім'я" required minlength="3" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="reg-email">Електронна пошта</label>
+              <input type="email" id="reg-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="reg-password">Пароль</label>
+              <input type="password" id="reg-password" name="password" placeholder="Не менше 8 символів" required minlength="8" autocomplete="new-password" />
+            </div>
+            <button type="submit">Створити акаунт</button>
+          </form>
+          <p class="auth-switch">Вже маєте акаунт? <a href="#login">Увійти</a></p>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Kitchen<span>Notes</span></a>
+        <p>Місце, де кулінарія стає мистецтвом.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Сторінки</h4>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог рецептів</a></li>
+          <li><a href="recipe-item.html">Рецепт</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Категорії</h4>
+        <ul>
+          <li><a href="catalog.html#pasta">Паста</a></li>
+          <li><a href="catalog.html#soups">Супи</a></li>
+          <li><a href="catalog.html#salads">Салати</a></li>
+          <li><a href="catalog.html#desserts">Десерти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 KitchenNotes. Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
